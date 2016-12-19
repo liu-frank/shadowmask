@@ -1,0 +1,2 @@
+"use strict";WUI.ready=function(){WUI.ContentHeader.create({$el:$(".content-header"),meta:[{name:"任务"}]});var t=function(t){WUI.ajax({url:"/data/table",method:"GET",data:{}}).done(function(t){WUI.riskTable.create({$el:$(".data-table"),titles:t.data.titles,list:t.data.data})})};t(),WUI.DataPaginator.create({$el:$(".data-paginator"),currentPage:options.currentPage,total:resp.total,pageSize:options.pageSize,onSwitchPage:function(e){t({currentPage:e,pageSize:options.pageSize})}})},$(function(){WUI.init({system:"sensitive"})});
+//# sourceMappingURL=task.js.map
